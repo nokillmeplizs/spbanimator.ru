@@ -1,0 +1,47 @@
+.video {
+    width:30%;
+    padding-top: 20px;
+}
+.videoMainPage{
+    width: 90%;
+    margin: 0 auto;
+}
+.videoMainPage iframe{
+    width: 85% !important;
+    height: 41vw !important;
+    margin: 10px auto;
+}
+.videoContainer{
+    width: 95%;
+    margin: 0 auto;
+}
+.video iframe{
+    width: 95% !important;
+    height: 20vw !important;
+    margin: 10px auto;
+}
+.videoName{
+    font-size: calc((100vw - 480px) / (1280 - 480) * (24 - 16) + 12px);
+}
+
+@media screen and (max-width: 1150px) {
+    .video {
+        width:45%;
+        padding-top: 20px;
+    }
+    .video iframe{
+        height: 30vw !important;
+    }
+}
+@media screen and (max-width: 414px) {
+    .videoMainPage iframe{
+        width: 95% !important;
+    }
+    .video {
+        width:95%;
+        padding-top: 20px;
+    }
+    .video iframe{
+        height: 65vw !important;
+    }
+}

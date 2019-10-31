@@ -1,0 +1,21 @@
+{
+    "name": "alexandr/animator",
+    "description": "animator site",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandr Yurchenko",
+            "email": "pro_s_@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "nikic/fast-route": "^2.0@dev"
+    },
+    "autoload":{
+        "psr-4": {
+            "Alexandr\\Animator\\": "private/"
+        }
+    }
+}

@@ -1,0 +1,160 @@
+{
+  "db" : {
+    "server":"localhost",
+    "$db_name":"nokillme_anim",
+    "user":"nokillme_anim",
+    "pwd":"samka5259762"
+  },
+  "urls":{
+    "show main":{
+      "path":"/",
+      "controller":"Alexandr\\Animator\\Controllers\\IndexController::indexAction",
+      "method": "GET"
+    },
+    "logout":{
+      "path":"/logout",
+      "controller":"Alexandr\\Animator\\Controllers\\AccountController::logoutAction",
+      "method": "GET"
+    },
+    "registration":{
+      "path":"/account/registration",
+      "controller":"Alexandr\\Animator\\Controllers\\AccountController::registrationAction",
+      "method": "POST"
+    },
+    "auth":{
+      "path":"/account/auth",
+      "controller":"Alexandr\\Animator\\Controllers\\AccountController::authAction",
+      "method": "POST"
+    },
+    "account":{
+      "path":"/account",
+      "controller":"Alexandr\\Animator\\Controllers\\AccountController::accountAction",
+      "method": "GET"
+    },
+    "add new comment":{
+      "path":"/animator/addComment",
+      "controller":"Alexandr\\Animator\\Controllers\\AccountController::addCommentAction",
+      "method": "POST"
+    },
+    "show comments page":{
+      "path":"/comment",
+      "controller":"Alexandr\\Animator\\Controllers\\IndexController::showCommentAction",
+      "method": "GET"
+    },
+    "add character page":{
+      "path":"/charactersAdd",
+      "controller":"Alexandr\\Animator\\Controllers\\CharactersController::showCharacterAction",
+      "method": "GET"
+    },
+    "add character":{
+      "path":"/charactersAdd",
+      "controller":"Alexandr\\Animator\\Controllers\\CharactersController::addCharacterAction",
+      "method": "POST"
+    },
+    "edit character page":{
+      "path":"/characters/{id:\\d+}/edit",
+      "controller":"Alexandr\\Animator\\Controllers\\CharactersController::editCharacterAction",
+      "method": "GET"
+    },
+    "edit character save change":{
+      "path":"/charactersUpdate/{id:\\d+}",
+      "controller":"Alexandr\\Animator\\Controllers\\CharactersController::saveEditCharacterAction",
+      "method": "POST"
+    },
+    "delete character":{
+      "path":"/charactersDelete/{id:\\d+}",
+      "controller":"Alexandr\\Animator\\Controllers\\CharactersController::deleteCharacterAction",
+      "method": "POST"
+    },
+    "delete multPhoto":{
+      "path":"/multPhotoDelete/{id:\\d+}",
+      "controller":"Alexandr\\Animator\\Controllers\\CharactersController::deleteCharacterPhotoAction",
+      "method": "POST"
+    },
+    "delete showmultPhoto":{
+      "path":"/showmultPhotoDelete/{id:\\d+}",
+      "controller":"Alexandr\\Animator\\Controllers\\ShowController::deleteShowPhotoAction",
+      "method": "POST"
+    },
+    "characters":{
+      "path":"/characters",
+      "controller":"Alexandr\\Animator\\Controllers\\CharactersController::charactersAction",
+      "method": "GET"
+    },
+    "single character":{
+      "path":"/characters/{id:\\d+}",
+      "controller":"Alexandr\\Animator\\Controllers\\CharactersController::showSingleCharacterAction",
+      "method": "GET"
+    },
+    "show page":{
+      "path":"/show",
+      "controller":"Alexandr\\Animator\\Controllers\\ShowController::showAction",
+      "method": "GET"
+    },
+    "add show page":{
+      "path":"/showadd",
+      "controller":"Alexandr\\Animator\\Controllers\\ShowController::ShowShowAction",
+      "method": "GET"
+    },
+    "add show":{
+      "path":"/showadd",
+      "controller":"Alexandr\\Animator\\Controllers\\ShowController::addShowAction",
+      "method": "POST"
+    },
+    "delete show":{
+      "path":"/showsDelete/{id:\\d+}",
+      "controller":"Alexandr\\Animator\\Controllers\\ShowController::deleteShowAction",
+      "method": "POST"
+    },
+    "single show":{
+      "path":"/shows/{id:\\d+}",
+      "controller":"Alexandr\\Animator\\Controllers\\ShowController::showSingleShowAction",
+      "method": "GET"
+    },
+    "edit show page":{
+      "path":"/shows/{id:\\d+}/edit",
+      "controller":"Alexandr\\Animator\\Controllers\\ShowController::editShowAction",
+      "method": "GET"
+    },
+    "edit show save change":{
+      "path":"/showsUpdate/{id:\\d+}",
+      "controller":"Alexandr\\Animator\\Controllers\\ShowController::saveEditShowAction",
+      "method": "POST"
+    },
+    "about":{
+      "path":"/about",
+      "controller":"Alexandr\\Animator\\Controllers\\IndexController::aboutAction",
+      "method": "GET"
+    },
+    "video":{
+      "path":"/video",
+      "controller":"Alexandr\\Animator\\Controllers\\IndexController::VideoAction",
+      "method": "GET"
+    },
+    "video add":{
+      "path":"/videoadd",
+      "controller":"Alexandr\\Animator\\Controllers\\IndexController::addVideoAction",
+      "method": "POST"
+    },
+    "video add page":{
+      "path":"/videoadd",
+      "controller":"Alexandr\\Animator\\Controllers\\IndexController::showVideoAction",
+      "method": "GET"
+    },
+    "delete video":{
+      "path":"/videoDelete/{id:\\d+}",
+      "controller":"Alexandr\\Animator\\Controllers\\IndexController::deleteVideoAction",
+      "method": "POST"
+    },
+    "edit aboutUs main page":{
+      "path":"/aboutUs/edit",
+      "controller":"Alexandr\\Animator\\Controllers\\IndexController::aboutUsEditAction",
+      "method": "GET"
+    },
+    "save aboutUs main page":{
+      "path":"/aboutUs/edit",
+      "controller":"Alexandr\\Animator\\Controllers\\IndexController::aboutUsSaveAction",
+      "method": "POST"
+    }
+  }
+}
